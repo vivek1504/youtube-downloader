@@ -7,7 +7,7 @@ export const FooterComp = ()=>{
                 <img src="logo.svg" className="h-8" alt="DownTube.io Logo" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DownTube.io</span>
             </a>
-            <span className="block text-xs mt-3 sm:mt-0 sm:text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">DownTube.io™</a>. All Rights Reserved.</span>
+            <span className="block text-xs mt-3 sm:mt-0 sm:text-sm text-gray-500 dark:text-gray-400">© 2023 <a href="" className="hover:underline">DownTube.io™</a>. All Rights Reserved.</span>
         </div>
     </div>
 </footer>
