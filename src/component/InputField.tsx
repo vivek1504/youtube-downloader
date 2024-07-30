@@ -1,7 +1,6 @@
 import { useRecoilState, useSetRecoilState } from "recoil"
 import { loadingAtom, thumbnailAtom, titleAtom, urlAtom } from "../atoms/atoms";
 import axios from "axios";
-import { useEffect } from "react";
 
 export const InputField = ({setPasteLink}:{setPasteLink : any})=>{
     const [url, setUrl] = useRecoilState(urlAtom);
@@ -20,9 +19,6 @@ export const InputField = ({setPasteLink}:{setPasteLink : any})=>{
         })
     }
 
-    useEffect(()=>{
-        handleDownload();
-    },[])
     return <div>
     <form className="max-w-md mx-auto">   
     <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useRecoilValue } from "recoil";
 import { urlAtom } from "../atoms/atoms";
 
@@ -31,10 +31,6 @@ export const Button = () => {
         setDownload(true);
       });
   };
-
-  useEffect(() => {
-    handleDownload();
-  }, []);
 
   return (
     <div className="flex justify-center mb-4">
